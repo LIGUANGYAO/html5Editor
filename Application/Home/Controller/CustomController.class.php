@@ -196,7 +196,7 @@ class CustomController extends Controller{
 	
 	
 	public function detail(){
-		$wheredetail['id']  = I('get.id',0);
+		$where['id']  = I('get.id',0);
 		$vo=M('customer')->where($where)->find();
 		if($vo){			
 			$info='"id":'.$vo["id"].',
